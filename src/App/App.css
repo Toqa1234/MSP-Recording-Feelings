@@ -1,0 +1,348 @@
+:root{
+  --basecolor :#827397;
+  --secondcolor : #4D4C7D;
+  --lightcolor :#A760FF;
+  --firstcolor:#6699FF;
+  --onecolor :#480B82;
+
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Bungee', cursive; */
+}
+body{
+  background-image: linear-gradient(150deg ,var(--onecolor), var(--firstcolor)) ;
+  overflow: hidden;
+}
+.App {
+   padding: 29px;
+   height: 100vh ;
+}
+a{
+  text-decoration: none;
+}
+.App-header {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+}
+.App-logo {
+  height: 80px;
+  margin: 20px ;
+  vertical-align: middle;
+  justify-content: center;
+}
+.App-header  h2{
+  width:99vw ;
+  display: inline;
+  padding-top: 15px;
+  font-family: 'Bungee', cursive;
+  font-size: 60px;
+  justify-content: baseline;
+  justify-items: baseline;
+  Vertical-align:middle;
+  color: white;
+}
+.content{
+  width: 100%;
+  display: flex;
+  height: 75vh;
+}
+.right{
+  width: 50%;
+}
+
+.text{
+  background-color:#6699ff52 ;
+  padding-left:15px ;
+  border-radius: 30px;
+  height: 60px;
+  font-size: 26px;
+  width: 80%;
+  margin:10px;
+  margin-top: 25px;
+}
+.text:focus{
+  outline: none;
+  border: none;
+}
+.right h4{
+  color: white;
+  font-size: 24px;
+  margin-left:20px ;
+}
+.myemojisbutton{
+  display: flex;
+  width: 50vw;
+}
+.myEmojis{
+  display: flex;
+  padding-left: 10px;
+  width: 60%;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"] + label >img{
+   cursor: pointer;
+}
+input[type="radio"]:checked + label>img{
+  transform: scale(1.2);
+}
+
+.myEmojis img{
+  vertical-align: middle;
+  justify-content: center;
+  justify-items: center;
+  margin: 8px;
+  width: 70px;
+  height: 70px;
+}
+.btn1{
+  height:60px;
+  transition: 0.5s;
+  background-color: var(--firstcolor);
+  color: white;
+  font-size: 20px;
+  border:none;
+  vertical-align: middle;
+  width: 150px;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 50px;
+
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1,1.1);
+}
+.logo2{
+  position: fixed;
+  height: 250px;
+  width: 40%;
+  bottom: 0px;
+  left: 0px;
+}
+.left{
+  width: 50%;
+  border:#c79bf6 solid 2px;
+  border-radius: 20px;
+  margin: 5px;
+  overflow-y: scroll;
+}
+.logo23{
+  display: none;
+}
+.therecord{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+.therecord img{
+  display: inline-block;
+  margin: 8px;
+  width: 70px;
+  height: 70px;
+  
+}
+.therecord p{
+  display: inline;
+  color: white;
+  font-size: 20px;
+}
+.therecord button{
+  margin-left: 30px;
+  background-color: var(--firstcolor);
+  width: 20%;
+  height: 30px;
+  border-radius: 50px;  transition: 0.5s;
+  background-color: var(--firstcolor);
+  color: white;
+  font-size: 20px;
+}
+
+
+
+@media screen and (max-width :1030px){
+body{
+  /* background-image: linear-gradient(150deg ,var(--firstcolor), var(--firstcolor)) ; */
+ overflow-y: scroll;
+}
+.App-header {
+  display: flex;
+  height: 30vh;
+  width: 97vw;
+  align-items: center;
+  justify-items:center;
+  justify-content:space-between;
+  align-items: center;
+}
+.App {
+  padding: 10px;
+  height:170vh ;
+}
+.App-header h2{
+  display: flex;
+  padding-top: 0px;
+  font-size: 50px;
+}
+.btn1{
+  width: 170px;
+}
+
+.App-logo {
+  height: 70px;
+  margin: 10px ;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+.content{
+  width: 96vw;
+  display: block;
+  height: 75vh;
+}
+.right{
+  padding: 5px;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.myemojisbutton{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.text{
+  background-color:#6699ff52 ;
+  padding:0px 15px ;
+  border-radius: 30px;
+  height: 60px;
+  font-size: 26px;
+  width: 95%;
+  margin:20px;
+  margin-top: 5px;
+
+}
+.myEmojis{
+  padding-left: 0px;
+  gap: 10px;
+  width: 70%;
+}
+.myEmojis img{
+  width: 70px;
+  height: 70px;
+}
+.right h4{
+  font-size: 28px;
+  margin: 15px;
+  margin-left:20px ;
+}
+.left{
+  width: 95%;
+  height: 60vh;
+  border:#c79bf6 solid 2px;
+  border-radius: 30px 10px  10px 30px ;
+  margin: 10px;
+  overflow-y: scroll;
+  -webkit-border-radius: 30px 10px  10px 30px ;
+  -moz-border-radius: 30px 10px  10px 30px ;
+  -ms-border-radius: 30px 10px  10px 30px ;
+  -o-border-radius: 30px 10px  10px 30px ;
+}
+.logo2{
+display: none;
+}
+}
+
+@media screen and (max-width :800px){
+  body{
+    background-image: linear-gradient(150deg ,var(--onecolor), var(--onecolor)) ;
+  }
+  .btn1{
+    width: 170px;
+  }
+  .App-header {
+    width: 95vw;
+  }
+  .App-header h2{
+    display: flex;
+    padding-top: 0px;
+    font-size: 40px;
+  }  
+  }
+  @media screen and (max-width :600px){
+    body{
+      background-image: linear-gradient(100deg ,var(--firstcolor), var(--onecolor)) ;
+    }
+    .App{
+      height: 167vh;
+    }
+    .btn1{
+      width: 90%;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .logo23{
+      display: block;
+      position: relative;
+      bottom: 0px;
+    }
+    .App-header {
+      width: 95vw;
+    }
+    .App-header h2{
+      font-size: 30px;
+    }  
+    .myemojisbutton{
+      display: block;
+
+    }
+    .myEmojis{
+      display: flex;
+      padding-left: 10px;
+      width: 100%;
+      gap: 30px;
+    }
+    }
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
